@@ -1,0 +1,272 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Zagarino — Développeur full stack</title>
+<meta name="description" content="Zagarino, développeur full stack à Madagascar. Applications web et mobiles React, Node.js et PostgreSQL, avec intégration d'assistants IA.">
+<meta name="theme-color" content="#030405">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;600;700&family=Inter:wght@400;500;600&family=JetBrains+Mono:wght@400;500;600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<a class="skip" href="#travaux">Aller aux projets</a>
+
+<header class="topbar">
+  <a class="mark" href="#haut">
+    <span class="mark-name">Zagarino</span>
+  </a>
+  <nav class="nav" aria-label="Sections">
+    <a href="#travaux">Projets</a>
+    <a href="#savoirfaire">Savoir-faire</a>
+    <a href="#contact">Contact</a>
+  </nav>
+</header>
+
+<main id="haut">
+
+  <section class="hero">
+    <canvas class="hero-sky" aria-hidden="true"></canvas>
+
+    <div class="hero-content">
+      <div class="hero-text">
+        <p class="hero-eyebrow">Madagascar — développeur full stack</p>
+        <h1 class="hero-title">
+          Je construis des<br>
+          applications qui<br>
+          <span class="wide">tiennent en production.</span>
+        </h1>
+        <p class="hero-lede">
+          Du schéma de base de données jusqu'à l'écran que voit l'utilisateur. React et
+          React Native devant, Node.js et PostgreSQL derrière, des assistants IA branchés
+          là où ils font gagner du temps à quelqu'un.
+        </p>
+        <div class="hero-actions">
+          <a class="btn btn-solid" href="#travaux">Voir les projets</a>
+          <button class="btn btn-ghost" type="button" data-copy="rrazafindrafita@gmail.com">
+            <span data-copy-label>rrazafindrafita@gmail.com</span>
+          </button>
+        </div>
+        <p class="hero-stack">React — Node.js — PostgreSQL — Intégrations IA</p>
+      </div>
+
+      <div class="hero-code" aria-hidden="true">
+        <div class="code-bar">
+          <span class="code-file">api/routes/Full Stack Developer.js</span>
+          <span class="code-lang">Node.js</span>
+        </div>
+        <pre class="code-body"><code id="codeType"></code></pre>
+      </div>
+    </div>
+  </section>
+
+  <section class="strip" aria-label="Façon de travailler">
+    <ul class="stats">
+      <li class="stat">
+        <p class="stat-num">01</p>
+        <p class="stat-label">Terrain</p>
+        <p class="stat-desc">Écoles, hôtels et commerces malgaches — des clients qui jugent un produit à l'usage, pas à la démo.</p>
+      </li>
+      <li class="stat">
+        <p class="stat-num">02</p>
+        <p class="stat-label">Méthode</p>
+        <p class="stat-desc">Je prends le besoin, je tranche l'architecture, je livre, puis j'accompagne. Seul du début à la fin quand il le faut.</p>
+      </li>
+      <li class="stat">
+        <p class="stat-num">03</p>
+        <p class="stat-label">Focus actuel</p>
+        <p class="stat-desc">L'intégration de modèles de langage dans des produits métier : contexte, coût, fiabilité des réponses.</p>
+      </li>
+    </ul>
+  </section>
+
+  <section id="travaux" class="work">
+    <div class="work-head">
+      <h2>Projets</h2>
+      <div class="filters" role="group" aria-label="Filtrer par technologie">
+        <button type="button" class="chip is-on" data-filter="tout" aria-pressed="true">Tout</button>
+        <button type="button" class="chip" data-filter="react" aria-pressed="false">React</button>
+        <button type="button" class="chip" data-filter="node" aria-pressed="false">Node.js</button>
+        <button type="button" class="chip" data-filter="postgres" aria-pressed="false">PostgreSQL</button>
+        <button type="button" class="chip" data-filter="ia" aria-pressed="false">IA</button>
+      </div>
+    </div>
+
+    <ul class="ledger">
+
+      <li class="row" data-tags="react node postgres">
+        <button class="row-head" type="button" aria-expanded="false" aria-controls="p-correspondant">
+          <span class="row-year">2026</span>
+          <span class="row-name">Correspondant</span>
+          <span class="row-kind">Application mobile &amp; back-office scolaire</span>
+          <span class="row-sign" aria-hidden="true"></span>
+        </button>
+        <div class="row-body" id="p-correspondant" hidden>
+          <div class="row-body-inner">
+            <p>
+              Les parents suivent les notes, les absences, les échéances et les annonces de l'établissement
+              depuis leur téléphone. L'école administre tout depuis un back-office où surveillant,
+              enseignant et direction ne voient chacun que ce qui les concerne.
+            </p>
+            <ul class="points">
+              <li>Une seule API REST partagée par l'application mobile et le back-office, avec quatre rôles et un périmètre d'accès contrôlé par middleware.</li>
+              <li>Schéma PostgreSQL complet : élèves, classes, notes, présences, paiements, calendrier, jetons de notification.</li>
+              <li>Backend Express et Prisma, application React Native sous Expo, notifications push.</li>
+            </ul>
+            <p class="stack">React Native, Expo, Node.js, Express, Prisma, PostgreSQL</p>
+             <p><a class="link" href="https://github.com/zagarino0/correspondant-school">Voir le dépôt</a></p>
+          </div>
+        </div>
+      </li>
+
+      <li class="row" data-tags="react ia">
+        <button class="row-head" type="button" aria-expanded="false" aria-controls="p-majungago">
+          <span class="row-year">2026</span>
+          <span class="row-name">Majunga Go</span>
+          <span class="row-kind">Annuaire mobile de la ville de Mahajanga</span>
+          <span class="row-sign" aria-hidden="true"></span>
+        </button>
+        <div class="row-body" id="p-majungago" hidden>
+          <div class="row-body-inner">
+            <p>
+              Trouver un restaurant, un hôtel, un salon ou une boulangerie à Mahajanga, voir la fiche,
+              l'itinéraire, et poser la question en langage naturel quand on ne sait pas quoi chercher.
+            </p>
+            <ul class="points">
+              <li>Huit écrans dessinés de bout en bout : accueil, recherche filtrée, carte, fiche établissement, assistant, favoris, profil.</li>
+              <li>Assistant conversationnel intégré à la recherche plutôt que posé à côté.</li>
+              <li>Design system complet — palette, composants, états — avant la première ligne de code d'interface.</li>
+            </ul>
+            
+            <p class="stack">React Native, cartographie, API de modèle de langage</p>
+             <p><a class="link" href="https://github.com/zagarino0/mahajanga-go">Voir le dépôt</a></p>
+          </div>
+
+        </div>
+      </li>
+
+      <li class="row" data-tags="ia">
+        <button class="row-head" type="button" aria-expanded="false" aria-controls="p-hotellerie">
+          <span class="row-year">2026</span>
+          <span class="row-name">Sites et assistants IA pour l'hôtellerie</span>
+          <span class="row-kind">Missions clients, Mahajanga</span>
+          <span class="row-sign" aria-hidden="true"></span>
+        </button>
+        <div class="row-body" id="p-hotellerie" hidden>
+          <div class="row-body-inner">
+            <p>
+              Des établissements dont toute la présence en ligne tenait dans une page Facebook.
+              Diagnostic, refonte du site, puis un assistant WhatsApp qui répond aux questions
+              courantes et oriente vers la réservation, disponible sur chaque page.
+            </p>
+            <ul class="points">
+              <li>Sites multi-pages : chambres, restauration avec carte du menu et réservation de table, contact.</li>
+              <li>Assistant WhatsApp branché sur les informations réelles de l'établissement.</li>
+              <li>Diagnostic et proposition commerciale rédigés et présentés directement au client.</li>
+            </ul>
+            <p class="stack">HTML, CSS, JavaScript, intégration WhatsApp, API de modèle de langage</p>
+             <p><a class="link" href="https://github.com/zagarino0/hotellerie">Voir le dépôt</a></p>
+          </div>
+        </div>
+      </li>
+
+      <li class="row" data-tags="react">
+        <button class="row-head" type="button" aria-expanded="false" aria-controls="p-profplanner">
+          <span class="row-year">2025</span>
+          <span class="row-name">ProfPlanner</span>
+          <span class="row-kind">Emploi du temps et contrats pour enseignants</span>
+          <span class="row-sign" aria-hidden="true"></span>
+        </button>
+        <div class="row-body" id="p-profplanner" hidden>
+          <div class="row-body-inner">
+            <p>
+              Un enseignant qui cumule plusieurs établissements perd un temps fou à savoir où il doit
+              être et ce qui lui reste dû. L'application range les deux au même endroit.
+            </p>
+            <ul class="points">
+              <li>Planification des cours et suivi des contrats sur mobile.</li>
+              <li>Code source public sur GitHub.</li>
+            </ul>
+            <p class="stack">React Native, Expo</p>
+            <p><a class="link" href="https://github.com/zagarino0/profplanner-mobile">Voir le dépôt</a></p>
+          </div>
+        </div>
+      </li>
+
+    </ul>
+    <p class="ledger-empty" hidden>Aucun projet avec cette technologie pour l'instant.</p>
+  </section>
+
+  <section id="savoirfaire" class="skills">
+    <div class="skills-inner">
+      <h2>Savoir-faire</h2>
+      <div class="skill-grid">
+        <article class="skill">
+          <h3>Interface</h3>
+          <p>React, React Native sous Expo, JavaScript et TypeScript, HTML et CSS. Intégration de maquettes, design responsive, états d'erreur et de chargement traités comme le reste.</p>
+        </article>
+        <article class="skill">
+          <h3>Serveur</h3>
+          <p>Node.js et Express, conception d'API REST versionnées, authentification par jeton, gestion des rôles et des permissions par middleware.</p>
+        </article>
+        <article class="skill">
+          <h3>Données</h3>
+          <p>PostgreSQL, modélisation relationnelle, Prisma. MongoDB quand le besoin le justifie. Le schéma se décide avant le premier écran.</p>
+        </article>
+        <article class="skill">
+          <h3>Intelligence artificielle</h3>
+          <p>Intégration d'API de modèles de langage dans des produits existants : assistants web et WhatsApp, chatbots de renseignement et de réservation.</p>
+        </article>
+        <article class="skill">
+          <h3>Outillage</h3>
+          <p>Git et GitHub, déploiement GitHub Pages, Expo, Postman. Architecture mono-API servant plusieurs clients.</p>
+        </article>
+        <article class="skill">
+          <h3>Langues</h3>
+          <p>Malagasy en langue maternelle, français courant à l'écrit comme à l'oral pour les échanges clients, anglais technique pour la documentation et la veille.</p>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <section id="contact" class="contact">
+    <div class="contact-inner">
+      <h2>Parlons de votre projet</h2>
+      <p class="contact-lede">
+        Une application à construire, un site à reprendre, un assistant à brancher sur vos données :
+        écrivez-moi, je réponds vite.
+      </p>
+      <ul class="contact-list">
+        <li>
+          <span class="contact-kind">E-mail</span>
+          <a class="link" href="mailto:rrazafindrafita@gmail.com">rrazafindrafita@gmail.com</a>
+        </li>
+        <li>
+          <span class="contact-kind">WhatsApp</span>
+          <a class="link" href="https://wa.me/261348428652">+261 34 84 286 52</a>
+        </li>
+        <li>
+          <span class="contact-kind">Code</span>
+          <a class="link" href="https://github.com/zagarino0">github.com/zagarino0</a>
+        </li>
+      </ul>
+    </div>
+  </section>
+
+</main>
+
+<footer class="foot">
+  <div class="foot-inner">
+    <p>Zagarino — Full Stack Developer, Madagascar</p>
+    <p>Tous droits reservés.</p>
+  </div>
+</footer>
+
+<p class="toast" role="status" aria-live="polite" hidden></p>
+
+<script src="script.js"></script>
+</body>
+</html>
