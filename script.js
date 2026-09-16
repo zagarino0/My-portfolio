@@ -96,8 +96,13 @@ var codeLines = [
   },
 
   {
-    text: "    const developer = await db.developers.findById(req.params.id);",
-    html: '    <span class="tok-kw">const</span> developer = <span class="tok-kw">await</span> db.developers.<span class="tok-fn">findById</span>(req.params.id);'
+    text: "    const id = req.params.id;",
+    html: '    <span class="tok-kw">const</span> id = req.params.<span class="tok-prop">id</span>;'
+  },
+
+  {
+    text: "    const developer = await db.developers.findById(id);",
+    html: '    <span class="tok-kw">const</span> developer = <span class="tok-kw">await</span> db.developers.<span class="tok-fn">findById</span>(<span class="tok-prop">id</span>);'
   },
 
   {
